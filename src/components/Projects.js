@@ -24,7 +24,41 @@ export const Projects = () =>{
                 <Row>
                     <Col>
                     <h2> Projects</h2>
-                    <p>projects p</p>
+                    <p>projects placeholder</p>
+                <Tab.Container id="project-tabs" defaultActiveKey="first">
+                    <Nav variant="pills" defaultActiveKey="/home">
+                        <Nav.Item>
+                            <Nav.Link eventKey="first">Tab one</Nav.Link>
+                        </Nav.Item>
+                        <Nav.Item>
+                            <Nav.Link eventKey="second">Tab two</Nav.Link>
+                        </Nav.Item>
+                        <Nav.Item>
+                            <Nav.Link eventKey="third">
+                            Tab three
+                            </Nav.Link>
+                        </Nav.Item>
+                    </Nav>
+                    <Tab.Content>
+                        <Tab.Pane eventKey="first">
+                            <Row>
+                                {
+                                    projects.map((project,index) =>{
+                                        return (
+                                            <p>{project.title}</p>
+                                        )
+                                    })
+                                }
+                            </Row>
+                        </Tab.Pane>
+                        <Tab.Pane eventKey="second">
+                        </Tab.Pane>
+                                Second tab placeholder
+                        <Tab.Pane eventKey="third">
+                                Third tab placeholder
+                        </Tab.Pane>
+                    </Tab.Content>
+                </Tab.Container>
                     </Col>
                 </Row>
             </Container>
