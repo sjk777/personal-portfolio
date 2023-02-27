@@ -252,7 +252,7 @@ nav.navbar .navbar-togger[aria-expanded="true"] .navbar-toggler-icon{
   color: #b8b8b8;
   font-size: 18px;
   letter-spacing: 0.8px;
-  line-height: 1.5rem;
+  line-height: 1.5em;
   width: 96%;
 }
 
@@ -271,6 +271,30 @@ nav.navbar .navbar-togger[aria-expanded="true"] .navbar-toggler-icon{
   margin-left: 10px;
   transition: 0.3s ease-in-out;
   line-height: 1;
+}
+
+.banner button:hover svg{
+  margin-left: 25px;
+}
+.banner img{
+  animation: updown 3s linear infinite;
+}
+
+/* added to move the image up and down*/
+@keyframes updown{
+  0%{
+    transform: translateY(-20px);
+  }
+  50%{
+    transform: translateY(20px);
+  }
+  100%{
+    transform: translateY(-20px);
+  }
+}
+
+.txt-rotate > .wrap {
+  border-right: 0.08em solid #666;
 }
 
 .App{
