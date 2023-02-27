@@ -1,4 +1,4 @@
-import { Col, Container, Tab} from "react-bootstrap";
+import { Col, Container, Tab, Nav} from "react-bootstrap";
 import {ProjectCard} from "./ProjectCard";
 import colorSharp2 from "../assets/img/color-sharp2.png"
 
@@ -8,17 +8,17 @@ export const Projects = () =>{
         {
             title: "project1",
             description: "add description",
-            imgUrl: projImg1,
+            imgUrl: "placeholder",
         },
         {
             title: "project2",
             description: "add description 2",
-            imgUrl: projImg2,
+            imgUrl: "placeholder",
         },
         {
             title: "project3",
             description: "add description 3",
-            imgUrl: projImg3,
+            imgUrl: "placeholder",
         },
     ];
     return (
