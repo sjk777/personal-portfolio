@@ -49,8 +49,9 @@ export const Banner = () =>{
                         <span className="tagline">
                             Welcome to my Portfolio
                         </span>
-                        <h1>{`Hello I'm Sky Kim `}<span className="wrap">{text}</span> </h1>
-                        <p>Placeholder paragraph </p>
+                        <h1>{`Hello I'm Sky Kim `} </h1>
+                        <h1><span className="wrap">{text}</span></h1>
+                        <p> </p>
                         <button onClick = {() => console.log('connect')}>let's connect <ArrowRightCircle size={25} /></button>
                     </Col>
                     <Col xs={12} md={6} xl={5}>
